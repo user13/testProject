@@ -1,0 +1,8 @@
+
+HOW TO RUN TESTS:
+Full list of predefined commands you can find in package.json file in section scripts.
+Bellow main commands for running tests in headless mode(ui and api)
+1. UI: npm run test-ui
+2. API: npm run test-api
+
+

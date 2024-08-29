@@ -1,0 +1,19 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test-ui": "npx playwright test -g @ui",
+    "test-ui-debug": "npx playwright test -g @ui --debug",
+    "test-api": "npx playwright test -g @api",
+    "test-api-debug": "npx playwright test -g @api --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.45.1",
+    "@types/node": "20.14.9"
+  }
+}

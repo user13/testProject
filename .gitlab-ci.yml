@@ -1,0 +1,29 @@
+stages:
+  - test
+  - create-report
+
+
+test-ui:
+  image: mcr.microsoft.com/playwright:v1.43.0-jammy
+  stage: test
+  before_script:
+    - npm i
+    - npx playwright install
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npx playwright test -g @ui || true
+
+
+test-api:
+  image: mcr.microsoft.com/playwright:v1.43.0-jammy
+  stage: test
+  before_script:
+    - npm i
+    - npx playwright install
+  cache:
+    paths:
+      - node_modules/
+  script:
+    - npx playwright test -g @api || true
